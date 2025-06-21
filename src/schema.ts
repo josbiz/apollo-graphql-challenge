@@ -5,10 +5,11 @@ import { ApolloServer } from "@apollo/server";
 import RoleResolver from "./roles/RoleResolver"
 import { AuthResolver } from "./auth/AuthResolver";
 import ReservationResolver from "./reservation/ReservationResolver";
+import ContractResolver from "./contract/ContractResolver";
 
 export default async function bootstrap () {
     const schema = await buildSchema({
-        resolvers: [RoleResolver, AuthResolver, ReservationResolver],
+        resolvers: [RoleResolver, AuthResolver, ReservationResolver, ContractResolver],
     })
     const server = new ApolloServer({
         schema,
@@ -18,6 +19,6 @@ export default async function bootstrap () {
         listen: { port: 4000 },
     });
 
-    console.log(`🚀  Server ready at: ${url}`);
+    console.log(`Server listening at: ${url}`);
 }
 

@@ -14,7 +14,7 @@ export class AuthResolver {
   async getOwnerToken(
     @Arg("email") email: string,
     @Arg("ownerNumber") ownerNumber: string
-  ): Promise<string> {
+  ){
     const [rows] = await AuthService.getOwnerData(email, ownerNumber)
 
     const owner = rows;

@@ -60,7 +60,7 @@ Create an endpoint that reads **contractusage table** from an owner and calculat
 - Based on startDate and endDate  return points from this year and next year
 - contract should not be delinquent 
 - contract should be active
-- contract should not be Relase type
+- contract should not be Resale type
 - contract usage details should return total points group by usage type
 - total amount of points should be across all contract from the owner
 return response in the following format
@@ -98,13 +98,13 @@ Create and endpoint that returns the complete history of reservations
 - Response should be in the following format
 
 			- Upcoming Reservations
-				 - Reservation Id
+				- Reservation Id
 				- Site Name
 				- Check in Date
 				- Check out Date
 				- status
 			- Past Reservations
-				 - Reservation Id
+				- Reservation Id
 				- Site Name
 				- Check in Date
 				- Check out Date

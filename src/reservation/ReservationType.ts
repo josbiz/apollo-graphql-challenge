@@ -28,4 +28,13 @@ class Reservation {
     dateModified: Date
 }
 
+@ObjectType()
+export class ReservationHistory {
+    @Field(type => [Reservation])
+    UpcomingReservations: Reservation[]
+
+    @Field(type => [Reservation])
+    PastReservations: Reservation[]
+}
+
 export default Reservation
