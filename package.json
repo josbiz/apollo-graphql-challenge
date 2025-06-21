@@ -8,9 +8,9 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jose Bolivar Tapia",
   "license": "MIT",
-  "description": "",
+  "description": "Apollo Server and TypeGraphQL challenge",
   "dependencies": {
     "@apollo/server": "^4.12.2",
     "dotenv": "^16.5.0",
